@@ -1,0 +1,17 @@
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\bin\Debug\net8.0\ClinicManagement.EF.deps.json
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\bin\Debug\net8.0\ClinicManagement.EF.runtimeconfig.json
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\bin\Debug\net8.0\ClinicManagement.EF.dll
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\bin\Debug\net8.0\ClinicManagement.EF.pdb
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\bin\Debug\net8.0\ClinicManagement.Core.dll
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\bin\Debug\net8.0\ClinicManagement.Core.pdb
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\obj\Debug\net8.0\ClinicManagement.EF.csproj.AssemblyReference.cache
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\obj\Debug\net8.0\ClinicManagement.EF.GeneratedMSBuildEditorConfig.editorconfig
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\obj\Debug\net8.0\ClinicManagement.EF.AssemblyInfoInputs.cache
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\obj\Debug\net8.0\ClinicManagement.EF.AssemblyInfo.cs
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\obj\Debug\net8.0\ClinicManagement.EF.csproj.CoreCompileInputs.cache
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\obj\Debug\net8.0\ClinicMa.26A21288.Up2Date
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\obj\Debug\net8.0\ClinicManagement.EF.dll
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\obj\Debug\net8.0\refint\ClinicManagement.EF.dll
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\obj\Debug\net8.0\ClinicManagement.EF.pdb
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\obj\Debug\net8.0\ClinicManagement.EF.genruntimeconfig.cache
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.EF\obj\Debug\net8.0\ref\ClinicManagement.EF.dll
