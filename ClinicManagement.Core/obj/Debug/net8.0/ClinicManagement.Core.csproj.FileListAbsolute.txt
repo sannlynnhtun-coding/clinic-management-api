@@ -1,0 +1,14 @@
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\bin\Debug\net8.0\ClinicManagement.Core.deps.json
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\bin\Debug\net8.0\ClinicManagement.Core.runtimeconfig.json
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\bin\Debug\net8.0\ClinicManagement.Core.dll
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\bin\Debug\net8.0\ClinicManagement.Core.pdb
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\obj\Debug\net8.0\ClinicManagement.Core.csproj.AssemblyReference.cache
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\obj\Debug\net8.0\ClinicManagement.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\obj\Debug\net8.0\ClinicManagement.Core.AssemblyInfoInputs.cache
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\obj\Debug\net8.0\ClinicManagement.Core.AssemblyInfo.cs
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\obj\Debug\net8.0\ClinicManagement.Core.csproj.CoreCompileInputs.cache
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\obj\Debug\net8.0\ClinicManagement.Core.dll
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\obj\Debug\net8.0\refint\ClinicManagement.Core.dll
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\obj\Debug\net8.0\ClinicManagement.Core.pdb
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\obj\Debug\net8.0\ClinicManagement.Core.genruntimeconfig.cache
+E:\DATA SCIENCE\🔰 Beginner 🔰\Back_End\New folder\Clinic Management\ClinicManagement.Core\obj\Debug\net8.0\ref\ClinicManagement.Core.dll
