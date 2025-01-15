@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DATA SCIENCE\\🔰 Beginner 🔰\\Back_End\\New folder\\Clinic Management\\ClinicManagement.Core\\ClinicManagement.Core.csproj": {}
+    "D:\\slh\\proj\\clinic-management-api\\ClinicManagement.Core\\ClinicManagement.Core.csproj": {}
   },
   "projects": {
-    "E:\\DATA SCIENCE\\🔰 Beginner 🔰\\Back_End\\New folder\\Clinic Management\\ClinicManagement.Core\\ClinicManagement.Core.csproj": {
+    "D:\\slh\\proj\\clinic-management-api\\ClinicManagement.Core\\ClinicManagement.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DATA SCIENCE\\🔰 Beginner 🔰\\Back_End\\New folder\\Clinic Management\\ClinicManagement.Core\\ClinicManagement.Core.csproj",
+        "projectUniqueName": "D:\\slh\\proj\\clinic-management-api\\ClinicManagement.Core\\ClinicManagement.Core.csproj",
         "projectName": "ClinicManagement.Core",
-        "projectPath": "E:\\DATA SCIENCE\\🔰 Beginner 🔰\\Back_End\\New folder\\Clinic Management\\ClinicManagement.Core\\ClinicManagement.Core.csproj",
-        "packagesPath": "C:\\Users\\YahYay\\.nuget\\packages\\",
-        "outputPath": "E:\\DATA SCIENCE\\🔰 Beginner 🔰\\Back_End\\New folder\\Clinic Management\\ClinicManagement.Core\\obj\\",
+        "projectPath": "D:\\slh\\proj\\clinic-management-api\\ClinicManagement.Core\\ClinicManagement.Core.csproj",
+        "packagesPath": "C:\\Users\\Sann Lynn Htun\\.nuget\\packages\\",
+        "outputPath": "D:\\slh\\proj\\clinic-management-api\\ClinicManagement.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\YahYay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sann Lynn Htun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,9 +44,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
