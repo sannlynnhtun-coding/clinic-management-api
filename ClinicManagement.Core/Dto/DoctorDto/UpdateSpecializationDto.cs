@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ClinicManagement.Core.Dto.DoctorDto;
 
-namespace ClinicManagement.Core.Dto.DoctorDto
+public class UpdateSpecializationDto
 {
-    public class UpdateSpecializationDto
-    {
-        public string Specialization { get; set; }
-    }
+    public string Specialization { get; set; }
 }

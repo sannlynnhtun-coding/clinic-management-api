@@ -1,39 +1,31 @@
-﻿using ClinicManagement.Core.Dto.UserDto;
-using ClinicManagement.Core.Interfaces;
-using ClinicManagement.Core.InterfaceServices;
-using ClinicManagement.Core.Models;
-using ClinicManagement.Core.ResponseModel;
-using Mapster;
+﻿namespace Clinic_Management.Services;
 
-namespace Clinic_Management.Services
+public class UserServices : IUserServices
 {
-    public class UserServices : IUserServices
+    private readonly IUnitOfWork _unitOfWork;
+
+
+    public UserServices(IUnitOfWork unitOfWork)
     {
-        private readonly IUnitOfWork _unitOfWork;
+        _unitOfWork = unitOfWork;
+    }
 
+    public async Task<ResponseModel<IEnumerable<User>>> GetAllUsersAsync()
+    {
+        var users = await _unitOfWork.Users.GetAllAsync();
+        return ResponseModel<IEnumerable<User>>.CreateSuccessResponse(users);
+    }
 
-        public UserServices(IUnitOfWork unitOfWork)
+    public async Task<ResponseModel<bool>> DeleteUserAsync(int id)
+    {
+        var user = await _unitOfWork.Users.GetByIdAsync(id);
+        if (user == null)
         {
-            _unitOfWork = unitOfWork;
+            return ResponseModel<bool>.CreateErrorResponse("User not found.");
         }
 
-        public async Task<ResponseModel<IEnumerable<User>>> GetAllUsersAsync()
-        {
-            var users = await _unitOfWork.Users.GetAllAsync();
-            return ResponseModel<IEnumerable<User>>.CreateSuccessResponse(users);
-        }
-
-        public async Task<ResponseModel<bool>> DeleteUserAsync(int id)
-        {
-            var user = await _unitOfWork.Users.GetByIdAsync(id);
-            if (user == null)
-            {
-                return ResponseModel<bool>.CreateErrorResponse("User not found.");
-            }
-
-            _unitOfWork.Users.Delete(user);
-            await _unitOfWork.CompleteAsync();
-            return ResponseModel<bool>.CreateSuccessResponse(true, "User deleted successfully.");
-        }
+        _unitOfWork.Users.Delete(user);
+        await _unitOfWork.CompleteAsync();
+        return ResponseModel<bool>.CreateSuccessResponse(true, "User deleted successfully.");
     }
 }

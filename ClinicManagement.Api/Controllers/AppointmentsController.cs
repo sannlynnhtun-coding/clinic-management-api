@@ -1,82 +1,69 @@
-﻿using ClinicManagement.Core.Dto.AppointmentDto;
-using ClinicManagement.Core.Interfaces;
-using ClinicManagement.Core.InterfaceServices;
-using ClinicManagement.Core.Models;
-using ClinicManagement.Core.ResponseModel;
-using Mapster;
-using MapsterMapper;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿namespace Clinic_Management.Controllers;
 
-namespace Clinic_Management.Controllers
+[Route("api/[controller]")]
+[ApiController]
+public class AppointmentsController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AppointmentsController : ControllerBase
+    private readonly IAppointmentService _appointmentService;
+
+    public AppointmentsController(IAppointmentService appointmentService)
     {
-        private readonly IAppointmentService _appointmentService;
+        _appointmentService = appointmentService;
+    }
 
-        public AppointmentsController(IAppointmentService appointmentService)
+    [HttpGet]
+    public async Task<IActionResult> GetAllAppointments()
+    {
+        var result = await _appointmentService.GetAllAppointmentsAsync();
+        if (!result.Success)
         {
-            _appointmentService = appointmentService;
+            return BadRequest(result);
         }
+        return Ok(result);
+    }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllAppointments()
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetAppointmentById(int id)
+    {
+        var result = await _appointmentService.GetAppointmentByIdAsync(id);
+        if (!result.Success)
         {
-            var result = await _appointmentService.GetAllAppointmentsAsync();
-            if (!result.Success)
-            {
-                return BadRequest(result);
-            }
-            return Ok(result);
+            return NotFound(result);
         }
+        return Ok(result);
+    }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetAppointmentById(int id)
+    [HttpPost]
+    public async Task<IActionResult> AddAppointment([FromBody] AppointmentDto appointmentDto)
+    {
+        var result = await _appointmentService.AddAppointmentAsync(appointmentDto);
+        if (!result.Success)
         {
-            var result = await _appointmentService.GetAppointmentByIdAsync(id);
-            if (!result.Success)
-            {
-                return NotFound(result);
-            }
-            return Ok(result);
+            return BadRequest(result);
         }
+        return Ok(result);
+    }
 
-        [HttpPost]
-        public async Task<IActionResult> AddAppointment([FromBody] AppointmentDto appointmentDto)
+    [HttpPut("{id}/status")]
+    public async Task<IActionResult> UpdateAppointmentStatus(int id, [FromBody] UpdateStatusInAppointmentDto statusDto)
+    {
+        var result = await _appointmentService.UpdateAppointmentStatusAsync(id, statusDto.Status);
+        if (!result.Success)
         {
-            var result = await _appointmentService.AddAppointmentAsync(appointmentDto);
-            if (!result.Success)
-            {
-                return BadRequest(result);
-            }
-            return Ok(result);
+            return NotFound(result);
         }
+        return Ok(result);
+    }
 
-        [HttpPut("{id}/status")]
-        public async Task<IActionResult> UpdateAppointmentStatus(int id, [FromBody] UpdateStatusInAppointmentDto statusDto)
+    [HttpDelete("{id}")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> DeleteAppointment(int id)
+    {
+        var result = await _appointmentService.DeleteAppointmentAsync(id);
+        if (!result.Success)
         {
-            var result = await _appointmentService.UpdateAppointmentStatusAsync(id, statusDto.Status);
-            if (!result.Success)
-            {
-                return NotFound(result);
-            }
-            return Ok(result);
+            return NotFound(result);
         }
-
-        [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> DeleteAppointment(int id)
-        {
-            var result = await _appointmentService.DeleteAppointmentAsync(id);
-            if (!result.Success)
-            {
-                return NotFound(result);
-            }
-            return Ok(result);
-        }
+        return Ok(result);
     }
 }
-

@@ -1,10 +1,9 @@
-﻿namespace ClinicManagement.Core.Dto.AppointmentDto
+﻿namespace ClinicManagement.Core.Dto.AppointmentDto;
+
+public class AppointmentDto
 {
-    public class AppointmentDto
-    {
-        public int DoctorId { get; set; }
-        public int UserId { get; set; }
-        public DateTime Date { get; set; }
-        public string Status { get; set; }
-    }
+    public int DoctorId { get; set; }
+    public int UserId { get; set; }
+    public DateTime Date { get; set; }
+    public string Status { get; set; }
 }

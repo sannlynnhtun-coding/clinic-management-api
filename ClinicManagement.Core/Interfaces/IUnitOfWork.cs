@@ -2,14 +2,13 @@
 
 using ClinicManagement.Core.Models;
 
-namespace ClinicManagement.Core.Interfaces
+namespace ClinicManagement.Core.Interfaces;
+
+public interface IUnitOfWork : IDisposable
 {
-    public interface IUnitOfWork : IDisposable
-    {
-        IBaseRepository<User> Users { get; }
-        IBaseRepository<Doctor> Doctors { get; }
-        IBaseRepository<Appointment> Appointments { get; }
-        Task CompleteAsync();
+    IBaseRepository<User> Users { get; }
+    IBaseRepository<Doctor> Doctors { get; }
+    IBaseRepository<Appointment> Appointments { get; }
+    Task CompleteAsync();
         
-    }
 }
