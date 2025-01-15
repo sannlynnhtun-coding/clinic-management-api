@@ -5,9 +5,9 @@ VisualStudioVersion = 17.12.35309.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.Api", "ClinicManagement.Api\ClinicManagement.Api.csproj", "{C7F6712C-DECC-4912-97F3-DAE0DA11710C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.EF", "ClinicManagement.EF\ClinicManagement.EF.csproj", "{89240433-826E-46BA-8E2A-F5300A054588}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.Database", "ClinicManagement.Database\ClinicManagement.Database.csproj", "{89240433-826E-46BA-8E2A-F5300A054588}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.Core", "ClinicManagement.Core\ClinicManagement.Core.csproj", "{445C3BDE-FDAA-4E7E-B54F-801502E48006}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.Domain", "ClinicManagement.Domain\ClinicManagement.Domain.csproj", "{445C3BDE-FDAA-4E7E-B54F-801502E48006}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

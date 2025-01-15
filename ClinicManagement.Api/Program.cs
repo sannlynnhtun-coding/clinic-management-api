@@ -1,5 +1,5 @@
 ﻿using Clinic_Management.Services;
-using ClinicManagement.EF;
+using ClinicManagement.Database;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
